@@ -5,7 +5,6 @@ def lambda_handler(event, context):
 
     runtime = boto3.Session().client('sagemaker-runtime')
     
-    print(event)
     payload = json.dumps(event)
     
     response = runtime.invoke_endpoint(EndpointName = 'test-1',    
