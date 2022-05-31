@@ -13,6 +13,11 @@ def lambda_handler(event, context):
 
     result = response['Body'].read().decode('utf-8')
     
+    if result == '1':
+        res = True
+    else:
+        res = False
+    
     return {
-        "result": True  
+        "result": res
     }
