@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     
     payload = json.dumps(event)
     
-    response = runtime.invoke_endpoint(EndpointName = 'test-1',    
+    response = runtime.invoke_endpoint(EndpointName = 'fad-endpoint',    
                                        ContentType = 'application/json',               
                                        Body = payload)                     
 
